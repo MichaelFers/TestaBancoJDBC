@@ -2,9 +2,9 @@
 public class Usuario {
 	
 	private String nome;
-	private String anos;
+	private int anos;
 	
-	public Usuario(String nome, String anos) {
+	public Usuario(String nome, int anos) {
 		this.nome = nome;
 		this.anos = anos;
 	}
@@ -17,14 +17,16 @@ public class Usuario {
 		this.nome = nome;
 	}
 
-	public String getAnos() {
+	public int getAnos() {
 		return anos;
 	}
 
-	public void setAnos(String anos) {
+	public void setAnos(int anos) {
 		this.anos = anos;
 	}
 	
-	
+	public String toString() {
+		return "Nome: "+nome +", Anos: "+ anos;
+	}
 
 }
